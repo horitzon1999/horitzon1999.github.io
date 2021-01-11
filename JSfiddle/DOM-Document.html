@@ -5,17 +5,237 @@
 	<br>
 	<h2>Introducció:</h2>
 	<img src="imgDOM.jpg" alt="Girl in a jacket" width="500" height="650">
-	<h2>Funcions mes importants</h2>
-	<div>
-	<img src="Funcions1.png" alt="" width="500" height="650" style ="float:left;">
-	<img src="Funcions2.png" alt="" width="600" height="400">
-	</div>
+	<h1>Funcions mes importants</h1>
+    <h2>Trobant elements del HTML</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th style="width:50%">Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>document.getElementById(<em>id</em>)</td>
+                <td>Find an element by element id</td>
+            </tr>
+            <tr>
+              <td>document.getElementsByTagName(<em>name</em>)</td>
+              <td>Find elements by tag name</td>
+            </tr>
+            <tr>
+              <td>document.getElementsByClassName(<em>name</em>)</td>
+              <td>Find elements by class name</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Canviant elements del HTML</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th style="width:50%">Property</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><em>element</em>.innerHTML =&nbsp; <em>new html content</em></td>
+                <td>Change the inner HTML of an element</td>
+            </tr>
+            <tr>
+                <td><em>element</em>.<em>attribute = new value</em></td>
+                <td>Change the attribute value of an HTML element</td>
+            </tr>
+            <tr>
+                <td><em>element</em>.style.<em>property = new style</em></td>
+                <td>Change the style of an HTML element</td>
+            </tr>
+            <tr>
+                <th style="width:50%">Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><em>element</em>.setAttribute<em>(attribute, value)</em></td>
+                <td>Change the attribute value of an HTML element</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Afegint i eliminant elements</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th style="width:50%">Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>document.createElement(<em>element</em>)</td>
+                <td>Create an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.removeChild(<em>element</em>)</td>
+                <td>Remove an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.appendChild(<em>element</em>)</td>
+                <td>Add an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.replaceChild(<em>new, old</em>)</td>
+                <td>Replace an HTML element</td>
+            </tr>
+            <tr>
+                <td>document.write(<em>text</em>)</td>
+                <td>Write into the HTML output stream</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Afegint controladors d'events</h2>
+    <table>
+    <tbody>
+        <tr>
+            <th style="width:50%">Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>document.getElementById(<em>id</em>).onclick = function(){<em>code</em>}</td>
+            <td>Adding event handler code to an onclick event</td>
+        </tr>
+    </tbody>
+    </table>
+    <h2>Trobant elements HTML</h2>
+    <table class="w3-table-all notranslate">
+        <tbody>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>DOM</th>
+            </tr>
+            <tr>
+                <td>document.anchors</td>
+                <td>Returns all &lt;a&gt; elements that have a name attribute</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.applets</td>
+                <td>Returns all &lt;applet&gt; elements <span class="deprecated">(Deprecated in HTML5)</span></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.baseURI</td>
+                <td>Returns the absolute base URI of the document</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.body</td>
+                <td>Returns the &lt;body&gt; element </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.cookie</td>
+                <td>Returns the document's cookie</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.doctype</td>
+                <td>Returns the document's doctype</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.documentElement</td>
+                <td>Returns the &lt;html&gt; element </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.documentMode</td>
+                <td>Returns the mode used by the browser</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.documentURI</td>
+                <td>Returns the URI of the document </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.domain</td>
+                <td>Returns the domain name of the document server </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.domConfig</td>
+                <td><span class="deprecated">Obsolete.</span> Returns the DOM configuration</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.embeds</td>
+                <td>Returns all &lt;embed&gt; elements</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.forms</td>
+                <td>Returns all &lt;form&gt; elements </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.head</td>
+                <td>Returns the &lt;head&gt; element</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.images</td>
+                <td>Returns all &lt;img&gt; elements </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.implementation</td>
+                <td>Returns the DOM implementation</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.inputEncoding</td>
+                <td>Returns the document's encoding (character set)</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.lastModified</td>
+                <td>Returns the date and time the document was updated</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.links</td>
+                <td>Returns all &lt;area&gt; and &lt;a&gt; elements that have a href attribute</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.readyState</td>
+                <td>Returns the (loading) status of the document</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.referrer</td>
+                <td>Returns the URI of the referrer (the linking document)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.scripts</td>
+                <td>Returns all &lt;script&gt; elements</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.strictErrorChecking</td>
+                <td>Returns if error checking is enforced</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>document.title</td>
+                <td>Returns the &lt;title&gt; element </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>document.URL</td>
+                <td>Returns the complete URL of the document </td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 	<br>
-    <h2 style ="margin-top: 300px;">Exemple DOM al JSFiddle </h2>
-	<button type="button" style ="float:bottom;"> <a href="https://jsfiddle.net/horitzon1999/d8v39t0h/30/" target="_blank" >DOM DOCUMENT</a> </button>
+    <h2>Exemple DOM al JSFiddle </h2>
+	<button type="button" style ="float:bottom;"> <a href="https://jsfiddle.net/horitzon1999/16ok4zmq/67/" target="_blank" >DOM DOCUMENT</a> </button>
 	
-	
-    
-	</h2>
 </body>
 </html>
